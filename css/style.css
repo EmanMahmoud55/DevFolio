@@ -1,0 +1,412 @@
+
+
+:root{
+
+    --rating-color:#cde1f8;
+    --main-color:#0078ff;
+}
+
+body{
+    background-color: #f5f5f5;
+}
+
+/*loading-screen*/
+
+#loading
+{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: gray;
+    display:flex;
+    z-index: 9999;
+}
+
+.spinner {
+    margin: 100px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+  }
+  
+  .spinner > div {
+    background-color: #333;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  }
+  
+  .spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+  }
+  
+  .spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  .spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+  
+  .spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+  }
+  
+  @-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+    20% { -webkit-transform: scaleY(1.0) }
+  }
+  
+  @keyframes sk-stretchdelay {
+    0%, 40%, 100% { 
+      transform: scaleY(0.4);
+      -webkit-transform: scaleY(0.4);
+    }  20% { 
+      transform: scaleY(1.0);
+      -webkit-transform: scaleY(1.0);
+    }
+  }
+
+#btnUp
+{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    border-style: none;
+    display: none;
+}
+
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+#main-nav
+{
+    transition: background-color 2s;
+}
+
+
+nav a{
+    font-weight: 500;
+    font-size: 1rem;
+    
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255,255,255);
+}
+header{
+
+    background-image: url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+   background-attachment: fixed;
+}
+
+.layer{
+    width:100%;
+    height:100%;
+
+    background-color: rgba(0, 0, 0,0.6 );
+}
+
+.options
+{   
+ 
+    position: fixed;
+    top:120px;
+    left: -162.344px;
+    cursor: pointer;
+}
+.colors{
+   
+    background-color: lightblue;
+    padding: 10px;
+
+}
+
+.colors div{
+    width: 20px;
+    height:20px;
+    background-color: aqua;
+    margin: 5px;
+    display: inline-block;
+}
+
+
+
+.setting
+{
+    border: 1px solid lightblue;
+    cursor: pointer;
+}
+
+
+.about-content p span{
+
+    font-weight: bold;
+}
+
+.h{
+    height:12px;
+    background-color: var(--main-color);
+
+}
+
+.bg-rating{
+    background-color: var(--rating-color);
+
+}
+
+.rating p{
+    margin: 5px 0;
+}
+
+.rating div{
+    margin: 5px 0;
+}
+
+
+
+.about-container{
+    background-color: white;
+}
+
+
+.line{
+    width:15%;
+    height:3px;
+    background-color: var(--main-color);
+}
+
+
+
+.item .icon i {
+    
+    border-radius: 50%;
+    border:solid 10px var(--main-color);
+    font-size: 40px;
+    padding:30px;
+
+}
+
+.item{
+    background-color: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.item:hover i{
+    background-color: var(--main-color);
+    color:white;
+    border-color:var(--rating-color)
+}
+
+.title{
+    position:relative;
+}
+.title::after{
+    content:"";
+    position:absolute;
+    width: 5%;
+    height: 5px;
+transform:translateX(-50%);
+    background-color: var(--main-color);
+
+}
+
+#work{
+    background-image: url(../images/counters-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.layer2{
+    background-color: rgba(13, 110,253, 0.8);
+}
+
+.item2{
+    color:white;
+}
+
+.item2 i{
+    border-radius: 50%;
+    border:solid 10px var(--rating-color);
+    font-size: 1.7rem;
+    padding:20px;
+
+}
+.item2 h3{
+    margin-top: 10px;
+}
+
+.item3{
+    background-color: white;
+    margin-top: 15px;
+    box-shadow: 0px 13px 8px#e3e3e3 ;
+    cursor: pointer;
+}
+
+.item-caption{
+    padding-bottom: 10px;
+}
+
+.item3-icon{
+    width: 50px;
+    height: 50px;
+    border: solid 2px var(--main-color) ;
+    
+
+}
+
+.item3-icon i{
+    font-size: 1.5rem;
+    color: var(--main-color);
+
+}
+.caption{
+    font-size: 0.9rem;
+}
+
+.web{
+    color: var(--main-color);
+}
+
+.port-img{
+overflow: hidden;
+  
+}
+.port-img img{
+    transition:transform  1s;
+
+}
+
+
+.item3:hover .port-img img {
+    transform: scale(1.5,1.5);
+} 
+
+#testimonial,#contact{
+    background-image:url(../images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-layer{
+    background-color: rgba(13, 110,253, 0.5);
+}
+
+/*blog section*/
+.item4-caption{
+    background-color: #f7f7f7;
+}
+
+.caption a img{
+    width: 30px;
+    height: 30px;
+}
+.caption a{
+    color:#6a6d6c;
+}
+
+.caption:hover a{
+    color:var(--main-color);
+
+}
+
+.item4-body h6{
+    font-size: 0.8rem;
+    padding: 2px;
+    background-color: var(--main-color);
+    width: 25%;
+}
+
+/*contact*/
+form input,textarea{   
+   
+    width: 100%;    
+    border: solid 1px #ced4da ;
+    padding: 7px 10px;
+    font-size: 0.8rem;
+}
+
+form input{
+    display: block;
+    margin: 10px 0;
+    
+
+}
+
+button{
+    background-color: var(--main-color);
+    font-size: 1.1rem;
+}
+
+.touch ul li{
+    margin-bottom:10px ;
+}
+
+.touch ul li i{
+    color: var(--main-color);
+
+}
+
+.contact-icon i {
+
+    
+   
+    font-size: 1.3rem;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: color 1s ;
+    
+
+
+    
+    
+    
+}
+
+.contact-icon i:hover {
+    color:white;
+   
+    background-color: var(--main-color);
+    border-color: var(--rating-color)
+
+}
+
+footer{
+    background-color:#0062d3;
+
+}
+
+ 
+
+    
+
+
+
+
+
